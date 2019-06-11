@@ -15,19 +15,19 @@ namespace Assignment
             Console.WriteLine("****ROTORUA THERMAL HOLIDAY PARK****\n------------------------------------");
             Console.Write("\nPlease enter your Username: ");
             string user = Console.ReadLine();
-            Console.Write("Please enter a password: ");
+            Console.Write("Please enter a Password: ");
             string pass = Console.ReadLine();
-
-            bool loop = true;
+            
+            do
             {
-                Console.Write($"Welcome {user}, please enter your password again: ");
-                string check = Console.ReadLine();
+              Console.WriteLine("Please type your username again");
+              string input = Console.ReadLine();
+              
+            } while (user != input);
 
-                             
-            }   while (loop);
-                Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine("****APPROVED****");
-                Console.ReadLine();
+
+            Console.WriteLine("****APPROVED****");
+            Console.ReadLine();
             
             
         } 
